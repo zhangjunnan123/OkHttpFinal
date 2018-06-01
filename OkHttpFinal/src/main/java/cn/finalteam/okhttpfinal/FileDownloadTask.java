@@ -100,7 +100,7 @@ class FileDownloadTask extends AsyncTask<Void, Long, Boolean> {
                 totalTime += 1;
             }
             long networkSpeed = sum / totalTime;
-            callback.onProgress(progress, networkSpeed);
+            callback.onProgress(progress,total,networkSpeed);
         }
     }
 
